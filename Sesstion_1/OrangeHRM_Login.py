@@ -13,7 +13,7 @@ import time
 
 from selenium.webdriver.common.by import By
 from selenium import webdriver
-from se
+
 
 #driver=webdriver.Chrome("C:\Decho "# Selenium_with_python" >> README.mdrivers\chromedriver-win64\chromedriver.exe")
 #driver = webdriver.Chrome(r"C:\Drivers\chromedriver-win64\chromedriver" )
