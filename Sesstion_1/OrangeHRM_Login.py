@@ -20,7 +20,7 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 driver.get("https://www.saucedemo.com/")
 driver.find_element(By.NAME,"user-name").send_keys("standard_user")
-driver.find_element(By.ID,"password").send_keys("secret_sagituce")
+driver.find_element(By.ID,"password").send_keys("secret_sauce")
 driver.find_element(By.ID,"login-button").click()
 
 actual_output = driver.title
