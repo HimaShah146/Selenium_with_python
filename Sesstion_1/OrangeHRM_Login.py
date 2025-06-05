@@ -19,6 +19,7 @@ from selenium import webdriver
 #driver = webdriver.Chrome(r"C:\Drivers\chromedriver-win64\chromedriver" )
 driver = webdriver.Chrome()
 driver.get("https://www.saucedemo.com/")
+driver.maximize_window()
 driver.find_element(By.NAME,"user-name").send_keys("standard_user")
 driver.find_element(By.ID,"password").send_keys("secret_sauce")
 driver.find_element(By.ID,"login-button").click()
@@ -29,6 +30,11 @@ if actual_output == excepted_output:
     print("Pass")
 else:
     print("Fail")
+
+driver.find_element(By.XPATH,'//*[@id="item_0_title_link" and @data-test="item-0-title-link"]/div').click() #Partial Xpath
+driver.find_element(By.XPATH,'/html/body/div/div/div/div[2]/div/div/div[2]/button').click() #Full Xpath
+
+time.sleep(10)
 
 driver.close()
 
