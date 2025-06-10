@@ -30,11 +30,16 @@ if actual_output == excepted_output:
     print("Pass")
 else:
     print("Fail")
-
+#Navigational Commands
 driver.find_element(By.XPATH,'//*[@id="item_0_title_link" and @data-test="item-0-title-link"]/div').click() #Partial Xpath
 driver.find_element(By.XPATH,'/html/body/div/div/div/div[2]/div/div/div[2]/button').click() #Full Xpath
 
-time.sleep(10)
+time.sleep(5)
+driver.back()
 
+time.sleep(5)
+driver.forward()
+driver.refresh()
+time.sleep(5)
 driver.close()
 
