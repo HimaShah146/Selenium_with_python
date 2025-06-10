@@ -30,3 +30,4 @@ time.sleep(3)
 driver.get("https://money.rediff.com/gainers/bse/daily/groupz")
 v= driver.find_element(By.XPATH,"//a[text()='HDIL']/following::tr[2]").text
 print(v)
+

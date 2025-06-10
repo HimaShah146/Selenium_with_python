@@ -37,9 +37,11 @@ driver.find_element(By.XPATH,'/html/body/div/div/div/div[2]/div/div/div[2]/butto
 time.sleep(5)
 driver.back()
 
+
 time.sleep(5)
 driver.forward()
 driver.refresh()
 time.sleep(5)
 driver.close()
+
 

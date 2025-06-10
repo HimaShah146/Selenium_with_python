@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -14,3 +16,4 @@ vstore1 = driver.find_element(By.XPATH,"//button[normalize-space()='Log in']")
 print(vstore1.text)
 print(vstore1.get_attribute("value"))
 print(vstore1.get_attribute('type'))
+time.sleep(5)
