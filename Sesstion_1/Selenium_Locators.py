@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
 driver.maximize_window()
+driver.implicitly_wait(5)
 driver.get("https://money.rediff.com/gainers/bse/daily/groupall")
 msg = driver.find_element(By.XPATH,"//a[text()='GCM Capital Advisors']/self::a").text # GCM Capital Advisors
 
